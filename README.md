@@ -12,7 +12,7 @@
 
 ## :gear: Installation
 ```bash
-git clone https://github.com/DJRHails/dotfiles.git ~/.files
+git clone https://github.com/Saint-work/dotfiles.git ~/.files
 cd ~/.files
 ./bootstrap.sh --cli --yes
 

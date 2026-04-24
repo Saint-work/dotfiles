@@ -1,19 +1,19 @@
 ---
 name: patch-stack-action
-description: Manage patch-stack forks — setup, daily patch editing, and sync workflows. Use when a repo references DJRHails/patch-stack-action, has commits prefixed "patch-stack:", or has patch/* branches.
+description: Manage patch-stack forks — setup, daily patch editing, and sync workflows. Use when a repo references Saint-work/patch-stack-action, has commits prefixed "patch-stack:", or has patch/* branches.
 license: MIT
 metadata:
-  author: DJRHails
+  author: Saint-work
   version: "1.0"
 ---
 
 # Patch Stack
 
-Manage patch-stack forks powered by [DJRHails/patch-stack-action](https://github.com/DJRHails/patch-stack-action).
+Manage patch-stack forks powered by [Saint-work/patch-stack-action](https://github.com/Saint-work/patch-stack-action).
 
 ## When to use
 
-- The repo references `DJRHails/patch-stack-action` in a workflow
+- The repo references `Saint-work/patch-stack-action` in a workflow
 - Commits on `main` are prefixed with `patch-stack:`
 - The repo has `patch/*` branches
 - The user wants to set up a new patch-stack fork
@@ -173,7 +173,7 @@ on:
 
 jobs:
   sync:
-    uses: DJRHails/patch-stack-action/.github/workflows/patch-stack-sync.yml@main
+    uses: Saint-work/patch-stack-action/.github/workflows/patch-stack-sync.yml@main
     with:
       upstream_repo: <UPSTREAM_OWNER>/<UPSTREAM_REPO>
       upstream_branch: <UPSTREAM_BRANCH>
@@ -193,7 +193,7 @@ Insert after the first heading:
 
 ```markdown
 > **Fork note — patch-stack workflow:**
-> This is a patch-stack fork of [<UPSTREAM_OWNER>/<UPSTREAM_REPO>](https://github.com/<UPSTREAM_OWNER>/<UPSTREAM_REPO>), managed by [DJRHails/patch-stack-action](https://github.com/DJRHails/patch-stack-action).
+> This is a patch-stack fork of [<UPSTREAM_OWNER>/<UPSTREAM_REPO>](https://github.com/<UPSTREAM_OWNER>/<UPSTREAM_REPO>), managed by [Saint-work/patch-stack-action](https://github.com/Saint-work/patch-stack-action).
 >
 > **How it works:**
 > - The `<FORK_BASE_BRANCH>` branch mirrors upstream `<UPSTREAM_BRANCH>` nightly.
@@ -244,7 +244,7 @@ The sync workflow needs a GitHub App to push branches and manage PRs. Walk the u
 
 1. Go to **https://github.com/settings/apps/new**
 2. **Name**: something like `patch-stack-bot` (must be globally unique)
-3. **Homepage URL**: `https://github.com/DJRHails/patch-stack-action`
+3. **Homepage URL**: `https://github.com/Saint-work/patch-stack-action`
 4. **Permissions** (Repository):
    - **Contents**: Read & Write (push branches, create commits)
    - **Pull requests**: Read & Write (create/update/close PRs)
