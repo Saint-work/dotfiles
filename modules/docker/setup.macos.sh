@@ -5,7 +5,7 @@
 if colima status &>/dev/null 2>&1; then
   log::success "Colima running"
 else
-  log::execute "colima start --arch aarch64 --vm-type vz --vz-rosetta --cpu 6 --memory 10 --disk 60" "Colima start"
+  log::execute "colima start --arch aarch64 --vm-type vz --vz-rosetta --cpu 6 --memory 6 --disk 60" "Colima start"
 fi
 
 # Symlink docker socket to default path so tools find it automatically
