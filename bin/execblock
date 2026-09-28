@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-##? Provides a quick interface to execblock
-##?
-##? USAGE:
-##?    execblock <file>
-##?    execblock -h|--help
-
-uv run "$DOTFILES/modules/execblock/execblock.py" "$@"
