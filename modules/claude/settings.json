@@ -78,30 +78,6 @@
           }
         ]
       }
-    ],
-    "SessionStart": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "node /Users/dh/.agent-session-bridge/runtime/packages/claude-code/dist/claude-code/src/hook-cli.js session-start",
-            "async": true
-          }
-        ]
-      }
-    ],
-    "Stop": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "node /Users/dh/.agent-session-bridge/runtime/packages/claude-code/dist/claude-code/src/hook-cli.js stop",
-            "async": true
-          }
-        ]
-      }
     ]
   },
   "statusLine": {
